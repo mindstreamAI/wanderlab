@@ -194,4 +194,4 @@ n8n start
 
 ## 📞 Поддержка
 
-Вопросы? Telegram: @yurydavydov
+Вопросы? Telegram: @yd1337

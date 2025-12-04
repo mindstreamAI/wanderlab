@@ -2,7 +2,7 @@
 
 Автоматизированная система для создания и публикации контента о путешествиях в Telegram-канал с использованием AI.
 
-🔗 **Канал с результатами:** [t.me/wander_lab](https://t.me/wander_lab)
+🔗 **Канал с результатами (демо):** [t.me/wander_lab](https://t.me/wander_lab)
 
 [![N8N](https://img.shields.io/badge/N8N-Workflow-EA4B71?style=flat-square)](https://n8n.io/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-412991?style=flat-square)](https://openai.com/)
@@ -27,7 +27,7 @@
 
 ## 🏗 Архитектура
 
-![Workflow](screenshots/workflow.png)
+![Workflow](screenshots/1.workflow.jpg)
 
 ### Основной воркфлоу (9 узлов):
 
@@ -66,7 +66,9 @@ Error Trigger → Уведомление в Telegram
 
 ## 🎨 Примеры результатов
 
-![Post Example](screenshots/1.workflow.jpg)
+![Post Example](screenshots/3.post_1.jpg)
+![Post Example](screenshots/4.post_2.jpg)
+![Post Example](screenshots/5.post_3.jpg)
 
 **Сгенерированные темы:**
 - Неизведанные тропы Патагонии пешком
@@ -171,10 +173,9 @@ Error Trigger → Уведомление в Telegram
 Универсальный промпт для стабильного качества изображений:
 
 ```
-Professional travel photography: {{ topic }}. 
-Natural documentary style, cinematic composition, 
-realistic muted colors, no text overlays, 
-landscape focus, National Geographic aesthetic.
+Create a cinematic travel photography style image based on this topic: "{{ $json.output[0].content[0].text }}". 
+
+Style requirements: natural lighting, documentary photography aesthetic, authentic landscape moment, shot on professional mirrorless camera, realistic colors with slight desaturation, sense of adventure and exploration, no text overlays, no people in direct focus (small silhouettes for scale are ok), emphasis on the natural environment and atmosphere. Photojournalistic style, National Geographic quality, avoid oversaturated colors and overly dramatic scenes.
 ```
 
 **Ключевые принципы:**
@@ -229,8 +230,8 @@ MIT License - свободное использование и модифика�
 Разработано в рамках курса по промпт-инжинирингу и AI-автоматизации.
 
 **Контакты:**
-- Telegram: [@yurydavydov](https://t.me/yurydavydov)
-- Канал проекта: [t.me/wander_lab](https://t.me/wander_lab)
+- Telegram: [@yd1337](https://t.me/yd1337)
+- Демо канала проекта: [t.me/wander_lab](https://t.me/wander_lab)
 
 ---
 
@@ -238,6 +239,6 @@ MIT License - свободное использование и модифика�
 
 Поставь звезду на GitHub и подпишись на канал, чтобы увидеть систему в действии!
 
-**Дата создания:** Декабрь 2024  
+**Дата создания:** Декабрь 2025  
 **Версия:** 1.0  
 **Статус:** ✅ Production Ready
